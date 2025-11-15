@@ -12,9 +12,7 @@ body {
     text-decoration: none;
     color: var(--darkBlueOpacityColor);
 }
-:link:hover, :visited:hover {
-    color: var(--lightBlueColor);
-}
+
 
 /* header */
 .header {
@@ -66,9 +64,7 @@ body {
     color: transparent;
     color: var(--darkBlueOpacityColor);
 }
-.header-nav-item:hover { 
-    color: var(--lightBlueColor);
-}
+
 .current-header-nav-item {
     color: transparent;
     background: var(--gradientColor);
@@ -144,9 +140,7 @@ body {
     width: 48px;
     transition: var(--transition);
 }
-.sn-logo-item:hover svg {
-    transform: scale(1.15, 1.15);
-}
+
 .current-footer-nav-item {
     color: var(--lightBlueColor);
 }
@@ -210,10 +204,7 @@ body {
 
     transition: var(--transition);
 }
-.btn:hover {
-    background: var(--lightBlueColor);
-    color: var(--whiteColor);
-}
+
 
 
 /* 1440 */
@@ -386,3 +377,19 @@ body {
     }
 }
 
+@media (hover:hover) {
+    :link:hover, 
+    :visited:hover {
+        color: var(--lightBlueColor);
+    }
+    .header-nav-item:hover { 
+        color: var(--lightBlueColor);
+    }
+    .sn-logo-item:hover svg {
+        transform: scale(1.15, 1.15);
+    }
+    .btn:hover {
+        background: var(--lightBlueColor);
+        color: var(--whiteColor);
+    }
+}
