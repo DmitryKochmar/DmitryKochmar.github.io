@@ -87,7 +87,7 @@
 
     background-image: url(../img/images/dovnload-app.jpeg);
     background-size: cover;
-    background-position: bottom;
+    background-position: top;
     background-repeat: no-repeat;
 
     display: flex;
@@ -255,7 +255,6 @@
     .download-application-section {
         /*changed*/
         height: 550px;
-        background-position: top;
         margin-bottom: calc(var(--sectionSeparator) + 140px);
     }
     .download-application-selection-container {
