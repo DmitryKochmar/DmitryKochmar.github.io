@@ -1,0 +1,144 @@
+@import url(./main.css);
+
+:root {
+    --gradientColor: linear-gradient(270deg, #FF6200 -5.87%, #90F 56.28%, #0064FF 100%);
+    --lightBlueColor: rgb(0 81 255);
+    --darkBlueColor: rgb(2 10 53);
+    --darkBlueOpacityColor: rgb(31 43 107 / 0.7);
+    --whiteColor: rgb(255 255 255);
+    --blackColor: rgb(0 0 0);
+    --blackOpacityColor: rgb(0 0 0 / 0.7);
+
+    --borderRadius: 20px;
+    --blockShadow: 0px 0px 30px 0px rgb(2 10 53 / 0.3);
+    
+
+
+    --rubikFont: "Rubik", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    --leadText: 400 20px/150% var(--rubikFont);
+    --text: 400 18px/170% var(--rubikFont);
+    --smallText: 400 15px/normal var(--rubikFont);
+    --btnText: 500 16px/normal var(--rubikFont);
+    --accentText: 500 24px/normal var(--rubikFont);
+    --h1: 500 54px/normal var(--rubikFont);
+    --h2: 500 48px/normal var(--rubikFont);
+    --h3: 500 22px/normal var(--rubikFont);
+    
+    
+    /* font: [font-style] [font-variant] [font-weight] [font-size]/[line-height] [font-family];  */
+    
+    --rel1: 24px;
+    --rel2: 54px;
+    --sectionSeparator: 260px;
+    --sectionPaddingInline: 150px;
+    --paddingArticle: 40px;
+
+
+    --transition: all 0.4s ease 0.001s;
+ 
+
+}
+.hero-section {
+    height: 100vh;
+    background-image: url("../img/images/section_1_app.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* padding-top: 10%; */
+    padding-top: 140px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 5px;
+}
+
+.lead-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--rel1);
+}
+
+.grid-about-business {
+    height: 120vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "z1 z1"
+                         "z2 z3";
+    gap: 20px;
+}
+.grid-about-business article {
+    padding: var(--paddingArticle);
+    border-radius: var(--borderRadius);
+    box-shadow: var(--blockShadow);
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+.z1 {
+    grid-area: z1;
+}
+.z2 {
+    grid-area: z2;
+}
+.z3 {
+    grid-area: z3;
+}
+
+/* .how-to-start{
+    height: 40vh;
+} */
+.steps-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap:20px;
+}
+
+.steps-container article {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    flex-grow: 1;
+
+    padding: var(--paddingArticle) var(--paddingArticle) 0;
+    border-radius: var(--borderRadius);
+    box-shadow: var(--blockShadow);
+
+}
+
+.steps-container img {
+    width: 100%;
+    margin-top: var(--rel1);
+}
+
+.download-section {
+    height: 105vh;
+    margin-block: var(--sectionSeparator);
+    background-image: url("../img/images/inside-car.png");
+   
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 12%;
+    
+}
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    backdrop-filter: blur(4px);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 5px;
+}
+.overlay p {
+    color: var(--whiteColor);
+}

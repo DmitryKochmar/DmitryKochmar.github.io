@@ -1,0 +1,271 @@
+@import url(./main.css);
+
+/* Главная секция */
+.hero-section {
+    height: 900px;
+    padding-top: 170px;
+    padding-inline: var(--leadPaddingInline);
+
+    background-image: url(../img/images/section_1.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+
+
+
+/* С нами */
+.with-us-section {
+    margin-block: var(--sectionSeparator);
+}
+.with-us-section .h2 {
+    margin-left: var(--sectionPaddingInline);
+}
+
+.slider {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 20px;
+
+    padding-inline: var(--sectionPaddingInline);
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+}
+
+.slider-item {
+    min-width: 100%;
+    scroll-snap-align: center;
+}
+.slider-item-img {
+    height: 70vh;
+    width: 100%;
+    margin-bottom: var(--rel1);
+    border-radius: var(--borderRadius);
+   
+    object-fit: cover;
+}
+
+
+
+/* О приложении */
+.about-app-container {
+   
+    height: 700px;
+    padding: calc(var(--paddingArticle) * 2);
+    border-radius: var(--borderRadius);
+    box-shadow: var(--blockShadow);
+
+    background-image: url(../img/images/about-app.png);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+    gap: var(--rel2);
+}
+.about-app-item {
+    width: 50%;
+}
+
+
+/* Скачайте приложение */
+.download-application-section {
+    height: 700px;
+    margin-bottom: calc(var(--sectionSeparator) + 70px);
+
+    background-image: url(../img/images/dovnload-app.png);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+.download-application-selection-container {
+    padding: var(--paddingArticle);
+    border-radius: var(--borderRadius);
+
+    background-color: var(--whiteColor);
+    box-shadow: var(--blockShadow);
+
+    position: relative;
+    top: 70px;
+    
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    gap: 50px;
+}
+
+.download-application-buttons {
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: start;
+    align-content: start;
+}
+
+
+
+
+/* Бизнесу */
+.for-business-grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "z1 z2"
+                         "z1 z3";
+    gap: 20px;
+}
+
+.for-business-grid-container article {
+    border-radius: var(--borderRadius);
+    box-shadow: var(--blockShadow);
+    padding: var(--paddingArticle);
+}
+
+.business-z1 {
+    grid-area: z1;
+    background-image: url(../img/images/installation-process.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.business-z2 {
+    grid-area: z2;
+   
+}
+.business-z3 {
+    grid-area: z3;
+    background: var(--gradientColor);
+    color: var(--whiteColor);
+}
+.white-text {
+    color: var(--whiteColor);
+}
+
+/* Консультация */
+.cta-business-section {
+    height: 800px;
+    background-image: url(../img/images/cta-business.png);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+
+    padding-top: 140px;
+    padding-inline: var(--leadPaddingInline);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+}
+
+/* Карта */
+.map-frame {
+    height: 80vh;
+    border-radius: var(--borderRadius);
+    box-shadow: var(--blockShadow);
+}
+
+
+
+/* 1024 */
+@media (max-width: 1024px) {
+
+    /* .about-app-container {
+       height: 700px;
+    }*/
+    .about-app-item {
+        /*changed*/
+        width: 60%;
+    }
+
+    .download-application-selection-container {
+        /*changed*/
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+   
+    .download-application-buttons {
+        /*changed*/
+        width: 100%;  
+    }
+}
+
+/* 768 */
+@media (max-width: 768px) {
+    .about-app-container {
+        /*changed*/
+        min-height: 600px;
+        padding: var(--paddingArticle);
+    }
+    .for-business-grid-container {
+        /*changed*/
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 0.5fr 0.5fr;
+        grid-template-areas: "z1"
+                             "z2"
+                             "z3";
+    }
+    .business-z1 {
+        /*changed*/
+        background-position: center;
+        height: 500px;
+    }
+    .download-application-section {
+        /*changed*/
+        height: 600px;
+        margin-bottom: calc(var(--sectionSeparator) + 100px);
+    }
+    .download-application-selection-container {
+        /*changed*/
+        top: 100px;
+        background-color: #ffffffed;
+        backdrop-filter: blur(5px);
+       
+    }
+}
+
+/* 450 */
+@media (max-width: 450px) {
+    .slider-item-img {
+        /*changed*/
+        height: 50vh;
+    }
+    .map-frame {
+        /*changed*/
+        height: 50vh;
+    }
+    .download-application-section {
+        /*changed*/
+        height: 550px;
+        background-position: top;
+        margin-bottom: calc(var(--sectionSeparator) + 140px);
+    }
+    .download-application-selection-container {
+        /*changed*/
+        top: 140px;
+        gap: 20px;
+    }
+    .download-application-buttons {
+        /*changed*/
+        gap: 15px;
+    }
+
+}
