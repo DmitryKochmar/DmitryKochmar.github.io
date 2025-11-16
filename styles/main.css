@@ -271,9 +271,10 @@ body {
     :root { 
         /*changed*/
         --text: 400 16px/170% var(--rubikFont);
+        --accentText: 500 22px/normal var(--rubikFont);
         --leadText: 400 18px/150% var(--rubikFont);
-        --h1: 500 50px/normal var(--rubikFont);
-        --h2: 500 44px/normal var(--rubikFont);
+        --h1: 500 44px/normal var(--rubikFont);
+        --h2: 500 40px/normal var(--rubikFont);
         --h3: 500 20px/normal var(--rubikFont);
 
         --rel1: 24px;
@@ -332,6 +333,7 @@ body {
         /*changed*/
         --btnText: 500 15px/normal var(--rubikFont);
         --text: 400 15px/170% var(--rubikFont);
+        --accentText: 500 20px/normal var(--rubikFont);
         --leadText: 400 15px/150% var(--rubikFont);
         --h1: 500 34px/normal var(--rubikFont);
         --h2: 500 32px/normal var(--rubikFont);
@@ -342,8 +344,8 @@ body {
         --sectionSeparator: 170px;
         --sectionPaddingInline: 10px;
         --leadPaddingInline: 30px;
-        --paddingArticle: 20px;
-        --borderRadius: 15px;
+        --paddingArticle: 25px;
+        --borderRadius: 20px;
 
     }
     .header {
