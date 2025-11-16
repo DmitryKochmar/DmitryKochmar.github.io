@@ -4,7 +4,7 @@
 /*to main ?*/
 .hero-section {
     padding-top: 170px;
-    padding-inline: var(--leadPaddingInline);
+    /* padding-inline: var(--leadPaddingInline); */
 
     display: flex;
     flex-direction: column;
@@ -16,7 +16,6 @@
     width: 100%;
     object-fit: cover;
     object-position: center;
-    overflow: visible;
 }
 /*to main ?*/
 

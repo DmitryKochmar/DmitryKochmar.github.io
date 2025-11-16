@@ -76,6 +76,7 @@ body {
 .lead-block {
     margin-top: 5px;
     width: 100%;
+    padding-inline: var(--leadPaddingInline);
 
     display: flex;
     flex-direction: column;
