@@ -10,13 +10,16 @@
     justify-content: start;
     align-items: center;
 }
+/*to main ?*/
+
 .hero-section .image {
     height: 500px;
     width: 100%;
+    max-width: 1540px;
     object-fit: cover;
-    object-position: center;
+    object-position: top;
 }
-/*to main ?*/
+
 
 .grid-about-business {
     height: 120vh;
