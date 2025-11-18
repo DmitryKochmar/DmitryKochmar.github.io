@@ -249,6 +249,17 @@
 
 /* 450 */
 @media (max-width: 450px) {
+    .hero-section {
+        padding-top: 170px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        /* changed */
+        /* height: 100vh;
+        justify-content: space-between; */
+    }
     .slider-item-img {
         height: 50vh;
     }

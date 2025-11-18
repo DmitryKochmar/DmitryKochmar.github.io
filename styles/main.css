@@ -67,7 +67,7 @@ body {
 
 .current-header-nav-item {
     color: transparent;
-    background: var(--gradientColor);
+    background: var(--lightBlueColor);
     background-clip: text;
     font-weight: 400;
 }
@@ -215,8 +215,16 @@ body {
     height: 1.5em;
     width: 1.5em;
 }
+.btn path {
+    fill: currentColor;
+}
 .adaptive-height-btn {
     height: 50px;
+}
+
+.white-btn {
+    color: var(--whiteColor);
+    border: 3px solid var(--whiteColor);
 }
 
 
@@ -415,5 +423,9 @@ body {
     }
     .btn:hover path {
         fill: var(--whiteColor)
+    }
+    .white-btn:hover {
+        color: var(--whiteColor);
+        border: 3px solid var(--lightBlueColor);
     }
 }
