@@ -201,7 +201,7 @@ body {
     gap: 12px;
     
     font: var(--btnText);
-    padding: 13px 16px;
+    padding: 10px 16px;
     white-space: nowrap;
 
     color: var(--lightBlueColor);
@@ -216,7 +216,7 @@ body {
     width: 1.5em;
 }
 .adaptive-height-btn {
-    height: 56px;
+    height: 50px;
 }
 
 
@@ -391,10 +391,10 @@ body {
         box-shadow: var(--topBlockShadow);
     }
     .btn {
-        padding: 11px 16px;
+        padding: 9px 16px;
     }
     .adaptive-height-btn {
-        height: 50.5px;
+        height: 46.5px;
     }
 }
 
