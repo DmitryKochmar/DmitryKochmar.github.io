@@ -215,9 +215,6 @@ body {
     height: 1.5em;
     width: 1.5em;
 }
-.btn:hover path {
-    fill: var(--whiteColor)
-}
 .adaptive-height-btn {
     height: 56px;
 }
@@ -415,5 +412,8 @@ body {
     .btn:hover {
         background: var(--lightBlueColor);
         color: var(--whiteColor);
+    }
+    .btn:hover path {
+        fill: var(--whiteColor)
     }
 }
